@@ -37,6 +37,23 @@ h1 span{color:#fff;display:block;font-size:.62em}
 ul{list-style:none;padding:0;margin:8px 0 30px;text-align:left;display:grid;gap:10px}
 li{background:#0d0d0d;border-left:4px solid var(--y);border-radius:10px;padding:12px 14px;font-size:15px;line-height:1.35;color:#e8e8e8}
 footer{color:#777;font-size:13px;margin-top:26px}
+.badge{display:inline-block;background:#161300;border:1.5px solid var(--y);color:var(--y);font-weight:800;font-size:13px;letter-spacing:.3px;padding:7px 14px;border-radius:999px;margin:4px 0 18px}
+h2{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,8vw,36px);line-height:1.05;margin:0 0 16px;color:#fff;text-shadow:2px 2px 0 #000}
+h2 em{font-style:normal;color:var(--y)}
+h3{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:26px;letter-spacing:.5px;margin:34px 0 14px;color:var(--y)}
+.cols{display:grid;gap:12px;text-align:left}
+.col{background:#0d0d0d;border-radius:14px;padding:14px 16px;border:1.5px solid #222}
+.col.si{border-color:#3a3200}
+.ct{font-weight:800;font-size:17px;margin:0 0 6px}
+.col ul{margin:0;gap:6px}
+.col li{background:none;border:0;padding:4px 0 4px 14px;position:relative;font-size:15px}
+.col li:before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--y)}
+.col.no li:before{background:#666}
+.pasos{list-style:none;padding:0;margin:0 0 6px;display:grid;gap:10px;text-align:left}
+.pasos li{display:flex;align-items:center;gap:12px;background:#0d0d0d;border-radius:12px;padding:12px 14px;font-size:15px}
+.pasos span{flex:none;width:30px;height:30px;border-radius:50%;background:var(--y);color:#000;font-family:Anton,Impact,sans-serif;font-size:18px;display:flex;align-items:center;justify-content:center;border:2px solid #000;box-shadow:0 0 0 2px #fff}
+.bienvenido{font-size:20px;margin:30px 0 14px}
+.aviso{color:#666;font-size:12px;line-height:1.4;margin:6px 0 30px}
 @media (prefers-reduced-motion:reduce){.main{animation:none}}
 </style>
 </head>
@@ -44,16 +61,44 @@ footer{color:#777;font-size:13px;margin-top:26px}
 <main>
   <img class="foto" src="assets/mario-perfil.jpg" alt="Mario Izzo, El Cerrador Virtual">
   <h1>El Cerrador<span>Virtual</span></h1>
-  <p class="sub">Soy <b>Mario Izzo</b>. Te enseño a cerrar ventas por teléfono <b>desde cualquier parte de Estados Unidos</b>.</p>
+  <div class="badge">🇺🇸 Solo para personas que viven en Estados Unidos</div>
+  <h2>Aprende a generar ingresos <em>desde tu casa</em> como cerrador de ventas de alto valor</h2>
+  <p class="sub">Soy <b>Mario Izzo</b>. Trabajamos en el área de <b>servicios financieros</b>, cerrando ventas por teléfono y de forma virtual. Sin oficina, sin horario de 9 a 5.</p>
 
   <a class="btn main" href="https://calendar.app.google/t6EcpP3oggs8S3Cz7" target="_blank" rel="noopener">📞 Agenda una llamada conmigo</a>
-  <p class="nota">Elige el día y la hora que te queden mejor. Es gratis.</p>
+  <p class="nota">Elige el día y la hora que te queden mejor. La llamada es gratis.</p>
 
-  <ul>
-    <li>📌 Conoce cómo funciona el trabajo de cerrador virtual</li>
-    <li>🎯 Resolvemos tus dudas y vemos si es para ti</li>
-    <li>🏠 Trabajo 100% desde casa</li>
-  </ul>
+  <h3>⚠️ Esto no es para todo el mundo</h3>
+  <div class="cols">
+    <div class="col si">
+      <p class="ct">✅ Es para ti si…</p>
+      <ul>
+        <li>Eres una persona <b>ambiciosa</b> y de verdad quieres crecer</li>
+        <li>Quieres dejar de depender de un trabajo de 9 a 5</li>
+        <li>Estás dispuesto a aprender, practicar y ser disciplinado</li>
+        <li>Un "no" no te detiene: te hace marcar el siguiente número</li>
+      </ul>
+    </div>
+    <div class="col no">
+      <p class="ct">❌ No es para ti si…</p>
+      <ul>
+        <li>Buscas dinero fácil o rápido</li>
+        <li>Te rindes a la primera dificultad</li>
+        <li>No quieres invertir tiempo en aprender</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Cómo funciona</h3>
+  <ol class="pasos">
+    <li><span>1</span>Agenda tu llamada en el calendario</li>
+    <li><span>2</span>Hablamos de tus metas y te explico cómo trabajamos</li>
+    <li><span>3</span>Si es para ti, te digo cómo empezar</li>
+  </ol>
+
+  <p class="bienvenido">Si llegaste hasta aquí, <b>bienvenido</b>. 🔥</p>
+  <a class="btn main" href="https://calendar.app.google/t6EcpP3oggs8S3Cz7" target="_blank" rel="noopener">Quiero agendar mi llamada</a>
+  <p class="aviso">Los resultados dependen de tu esfuerzo y dedicación. No prometemos ingresos garantizados.</p>
 
   <a class="btn sec" href="https://www.instagram.com/el_cerradorvirtual/" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 4.6A5.2 5.2 0 1 0 12 17.2 5.2 5.2 0 0 0 12 6.8zm0 8.6a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8zm5.4-9.9a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
